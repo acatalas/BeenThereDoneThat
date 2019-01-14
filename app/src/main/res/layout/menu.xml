@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/cassiopeia">
+    
+    <RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+        
+        <ImageView
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_launcher_foreground"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_title"
+            android:textSize="@dimen/screen_title_size"
+            android:textColor="@color/title_color"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"/>
+        
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_launcher_foreground"/>
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/ListView_Menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/RelativeLayout01"
+        android:divider="@drawable/stardivider"
+        android:dividerHeight="30px"
+        android:listSelector="@color/menu_glow">
+    </ListView>
+    <ImageView
+        android:src="@drawable/earth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"/>
+</RelativeLayout>
